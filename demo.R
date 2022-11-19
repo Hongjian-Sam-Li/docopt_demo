@@ -10,8 +10,10 @@ Options:
 [--arg3=<arg3>]   Takes any value (this is an optional option)
 [--arg4=<arg4>]   Takes any value (this is an optional option)
 " -> doc
-
+main <- function() {
 library(docopt)
 opt <- docopt(doc)
 print(opt)
 print(typeof(opt))
+}
+main()
